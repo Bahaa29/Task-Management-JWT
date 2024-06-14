@@ -11,8 +11,8 @@
 ## Project Structure
 ├── config
 │   ├── SecurityConfig.java
-|   ├── JwtAuthenticationFilter
-|   ├── JwtTokenProvider
+│   ├── JwtAuthenticationFilter.java
+│   ├── JwtTokenProvider.java
 ├── controller
 │   ├── AuthController.java
 │   ├── TaskController.java
@@ -32,12 +32,11 @@
 │   ├── TaskService.java
 │   ├── EmailService.java
 ├── schedular
-|   ├── TaskScheduler.java
+│   ├── TaskScheduler.java
 ├── specification
-|   ├── TaskSpecification.java
-|
-└── DataLoader.java
-└── TaskManagementApplication.java
+│   ├── TaskSpecification.java
+├── DataLoader.java
+├── TaskManagementApplication.java
 
 
 ## Setup Instructions
