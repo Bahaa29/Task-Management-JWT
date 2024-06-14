@@ -50,12 +50,12 @@ public class DataLoader implements CommandLineRunner {
             User user = new User();
             user.setUsername("user");
             user.setPassword(passwordEncoder.encode("user"));
-            user.setEmail("bahaaeldin390@gmail.com");
+            user.setEmail("paoch537@gmail.com");
             user.setRoles(Set.of(userRole));
             userRepository.save(user);
 
             // Create a task for the admin user
-            Task adminTask = new Task();
+            /*Task adminTask = new Task();
             adminTask.setTitle("Admin Task");
             adminTask.setDeadline(LocalDateTime.now().plusHours(12)); // Set deadline within 24 hours for testing
             adminTask.setUser(admin);
@@ -66,7 +66,7 @@ public class DataLoader implements CommandLineRunner {
             userTask.setTitle("User Task");
             userTask.setDeadline(LocalDateTime.now().plusDays(1)); // Set deadline within 24 hours for testing
             userTask.setUser(user);
-            taskRepository.save(userTask);
+            taskRepository.save(userTask);*/
         }
     }
 }

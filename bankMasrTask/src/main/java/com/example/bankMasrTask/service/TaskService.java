@@ -1,9 +1,12 @@
 package com.example.bankMasrTask.service;
 
-
 import com.example.bankMasrTask.model.Task;
+import com.example.bankMasrTask.model.User;
 import com.example.bankMasrTask.repository.TaskRepository;
+import com.example.bankMasrTask.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -14,14 +17,28 @@ public class TaskService {
     @Autowired
     private TaskRepository taskRepository;
 
+    @Autowired
+    private UserRepository userRepository;
+
     public Task createTask(Task task) {
+        // Get the currently authenticated user
+        Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        String username = principal instanceof UserDetails ? ((UserDetails) principal).getUsername() : principal.toString();
+
+        // Find the user by username
+        User user = userRepository.findByUsername(username)
+                .orElseThrow(() -> new RuntimeException("User not found"));
+
+        // Assign the user to the task
+        task.setUser(user);
+
+        // Save the task
         return taskRepository.save(task);
     }
 
     public Task getTask(Long id) {
         return taskRepository.findById(id).orElseThrow(() -> new RuntimeException("Task not found"));
     }
-
 
     public Task updateTask(Long id, Task taskDetails) {
         Task task = getTask(id);
@@ -34,7 +51,8 @@ public class TaskService {
     }
 
     public void deleteTask(Long id) {
-        taskRepository.deleteById(id);
+        Task task = getTask(id);
+        taskRepository.delete(task);
     }
 
     public List<Task> getAllTasks() {
