@@ -9,8 +9,6 @@
 - Spring Data JPA
 
 ## Project Structure
-
-    src/main/java/com/example/bankMasrTask/
 ├── config
 │   ├── SecurityConfig.java
 |   ├── JwtAuthenticationFilter
