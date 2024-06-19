@@ -26,8 +26,7 @@ public class TaskService {
         String username = principal instanceof UserDetails ? ((UserDetails) principal).getUsername() : principal.toString();
 
         // Find the user by username
-        User user = userRepository.findByUsername(username)
-                .orElseThrow(() -> new RuntimeException("User not found"));
+        User user = userRepository.findByUsername(username).orElseThrow(() -> new RuntimeException("User not found"));
 
         // Assign the user to the task
         task.setUser(user);

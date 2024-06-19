@@ -1,6 +1,6 @@
 package com.example.banquemisr.challenge05.controller;
 
-import com.example.bankMasrTask.service.AuthService;
+import com.example.banquemisr.challenge05.service.AuthService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

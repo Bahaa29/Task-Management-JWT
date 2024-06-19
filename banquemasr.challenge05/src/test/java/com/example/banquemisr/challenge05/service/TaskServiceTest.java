@@ -1,8 +1,8 @@
-package com.example.bankMasrTask.service;
+package com.example.banquemisr.challenge05.service;
 
 
-import com.example.bankMasrTask.model.Task;
-import com.example.bankMasrTask.repository.TaskRepository;
+import com.example.banquemisr.challenge05.model.Task;
+import com.example.banquemisr.challenge05.repository.TaskRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
@@ -34,7 +34,7 @@ public class TaskServiceTest {
         task.setDescription("This is a sample task");
         task.setStatus("todo");
         task.setPriority("high");
-        task.setDueDate(LocalDate.now());
+        task.setDeadline(LocalDate.now().atStartOfDay());
     }
 
     @Test
