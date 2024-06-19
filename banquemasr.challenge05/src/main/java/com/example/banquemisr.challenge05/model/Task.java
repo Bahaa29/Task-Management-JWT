@@ -1,4 +1,4 @@
-package com.example.bankMasrTask.model;
+package com.example.banquemisr.challenge05.model;
 
 import lombok.Data;
 import jakarta.persistence.*;

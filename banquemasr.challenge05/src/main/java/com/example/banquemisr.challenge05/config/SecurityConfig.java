@@ -1,4 +1,4 @@
-package com.example.bankMasrTask.config;
+package com.example.banquemisr.challenge05.config;
 
 import com.example.bankMasrTask.service.AuthService;
 import org.springframework.context.annotation.Bean;

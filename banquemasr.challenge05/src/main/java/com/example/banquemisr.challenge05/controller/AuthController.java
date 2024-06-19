@@ -1,4 +1,4 @@
-package com.example.bankMasrTask.controller;
+package com.example.banquemisr.challenge05.controller;
 
 import com.example.bankMasrTask.service.AuthService;
 import org.springframework.beans.factory.annotation.Autowired;

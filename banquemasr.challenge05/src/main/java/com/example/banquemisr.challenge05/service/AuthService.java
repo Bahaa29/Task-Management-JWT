@@ -1,8 +1,8 @@
-package com.example.bankMasrTask.service;
+package com.example.banquemisr.challenge05.service;
 
-import com.example.bankMasrTask.model.User;
-import com.example.bankMasrTask.repository.UserRepository;
-import com.example.bankMasrTask.config.JwtTokenProvider;
+import com.example.banquemisr.challenge05.model.User;
+import com.example.banquemisr.challenge05.repository.UserRepository;
+import com.example.banquemisr.challenge05.config.JwtTokenProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.security.authentication.AuthenticationManager;

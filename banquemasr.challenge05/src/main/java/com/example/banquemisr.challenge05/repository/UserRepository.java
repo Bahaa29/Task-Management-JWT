@@ -1,7 +1,7 @@
-package com.example.bankMasrTask.repository;
+package com.example.banquemisr.challenge05.repository;
 
 
-import com.example.bankMasrTask.model.User;
+import com.example.banquemisr.challenge05.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.Optional;
 

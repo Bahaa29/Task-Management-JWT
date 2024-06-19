@@ -1,9 +1,9 @@
-package com.example.bankMasrTask.schedular;
+package com.example.banquemisr.challenge05.schedular;
 
 
 import com.example.bankMasrTask.service.EmailService;
-import com.example.bankMasrTask.model.Task;
-import com.example.bankMasrTask.repository.TaskRepository;
+import com.example.banquemisr.challenge05.model.Task;
+import com.example.banquemisr.challenge05.repository.TaskRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;

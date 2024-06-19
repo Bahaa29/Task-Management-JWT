@@ -1,12 +1,12 @@
-package com.example.bankMasrTask.controller;
+package com.example.banquemisr.challenge05.controller;
 
 
-import com.example.bankMasrTask.model.Task;
-import com.example.bankMasrTask.repository.TaskRepository;
-import com.example.bankMasrTask.service.TaskService;
+import com.example.banquemisr.challenge05.model.Task;
+import com.example.banquemisr.challenge05.repository.TaskRepository;
+import com.example.banquemisr.challenge05.service.TaskService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import com.example.bankMasrTask.specification.TaskSpecification;
+import com.example.banquemisr.challenge05.specification.TaskSpecification;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;

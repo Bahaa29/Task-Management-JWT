@@ -1,6 +1,6 @@
-package com.example.bankMasrTask.specification;
+package com.example.banquemisr.challenge05.specification;
 
-import com.example.bankMasrTask.model.Task;
+import com.example.banquemisr.challenge05.model.Task;
 import org.springframework.data.jpa.domain.Specification;
 
 import java.time.LocalDateTime;

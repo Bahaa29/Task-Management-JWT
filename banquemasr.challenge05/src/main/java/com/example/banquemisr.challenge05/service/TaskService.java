@@ -1,9 +1,9 @@
-package com.example.bankMasrTask.service;
+package com.example.banquemisr.challenge05.service;
 
-import com.example.bankMasrTask.model.Task;
-import com.example.bankMasrTask.model.User;
-import com.example.bankMasrTask.repository.TaskRepository;
-import com.example.bankMasrTask.repository.UserRepository;
+import com.example.banquemisr.challenge05.model.Task;
+import com.example.banquemisr.challenge05.model.User;
+import com.example.banquemisr.challenge05.repository.TaskRepository;
+import com.example.banquemisr.challenge05.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;

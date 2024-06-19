@@ -1,7 +1,7 @@
-package com.example.bankMasrTask.repository;
+package com.example.banquemisr.challenge05.repository;
 
 
-import com.example.bankMasrTask.model.Task;
+import com.example.banquemisr.challenge05.model.Task;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 

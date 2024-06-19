@@ -1,4 +1,4 @@
-package com.example.bankMasrTask.model;
+package com.example.banquemisr.challenge05.model;
 import lombok.Data;
 import org.springframework.security.core.GrantedAuthority;
 import jakarta.persistence.*;

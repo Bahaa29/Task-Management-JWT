@@ -1,4 +1,4 @@
-package com.example.bankMasrTask.config;
+package com.example.banquemisr.challenge05.config;
 
 
 import io.jsonwebtoken.Claims;

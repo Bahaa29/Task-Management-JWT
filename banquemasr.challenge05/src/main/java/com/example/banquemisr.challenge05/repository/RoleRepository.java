@@ -1,6 +1,6 @@
-package com.example.bankMasrTask.repository;
+package com.example.banquemisr.challenge05.repository;
 
-import com.example.bankMasrTask.model.Role;
+import com.example.banquemisr.challenge05.model.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface RoleRepository extends JpaRepository<Role, Long> {

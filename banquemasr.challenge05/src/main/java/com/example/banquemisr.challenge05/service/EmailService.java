@@ -1,4 +1,4 @@
-package com.example.bankMasrTask.service;
+package com.example.banquemisr.challenge05.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.javamail.JavaMailSender;
