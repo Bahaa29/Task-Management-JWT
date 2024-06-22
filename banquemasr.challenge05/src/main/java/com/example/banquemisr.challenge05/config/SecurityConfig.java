@@ -1,6 +1,6 @@
 package com.example.banquemisr.challenge05.config;
 
-import com.example.bankMasrTask.service.AuthService;
+import com.example.banquemisr.challenge05.service.AuthService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;

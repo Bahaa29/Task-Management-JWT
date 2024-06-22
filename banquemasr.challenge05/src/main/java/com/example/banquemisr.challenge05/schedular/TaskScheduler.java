@@ -1,7 +1,7 @@
 package com.example.banquemisr.challenge05.schedular;
 
 
-import com.example.bankMasrTask.service.EmailService;
+import com.example.banquemisr.challenge05.service.EmailService;
 import com.example.banquemisr.challenge05.model.Task;
 import com.example.banquemisr.challenge05.repository.TaskRepository;
 import org.springframework.beans.factory.annotation.Autowired;
